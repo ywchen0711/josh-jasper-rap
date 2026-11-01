@@ -1,0 +1,1491 @@
+{
+ "ep": "rap1",
+ "pace": 0,
+ "lines": [
+  {
+   "i": 0,
+   "t": 7.6,
+   "who": "dj",
+   "cast": "dj",
+   "text": "各位！歡迎來到《大嘻哈時代3》海選現場！我是 DJ 嗡嗡！",
+   "feel": "excited",
+   "perf": null
+  },
+  {
+   "i": 1,
+   "t": 12.99,
+   "who": "dj",
+   "cast": "dj",
+   "text": "今天的規則很簡單：每個人只有三十秒！",
+   "feel": "excited",
+   "perf": null
+  },
+  {
+   "i": 2,
+   "t": 16.240000000000002,
+   "who": "dj",
+   "cast": "dj",
+   "text": "三位評審，每人一條金項鍊。拿到兩條就晉級！",
+   "feel": "excited",
+   "perf": null
+  },
+  {
+   "i": 3,
+   "t": 20.360000000000003,
+   "who": "dj",
+   "cast": "dj",
+   "text": "讓我們歡迎今天的評審！",
+   "feel": "excited",
+   "perf": null
+  },
+  {
+   "i": 4,
+   "t": 22.780000000000005,
+   "who": "jsheon",
+   "cast": "jsheon",
+   "text": "大家好。今天我只想聽到真的聲音。",
+   "feel": "calm",
+   "perf": null
+  },
+  {
+   "i": 5,
+   "t": 26.870000000000005,
+   "who": "gummyb",
+   "cast": "gummyb",
+   "text": "三十秒？三十秒夠我講一個笑話……不夠，我的笑話比較長。",
+   "feel": "happy",
+   "perf": null
+  },
+  {
+   "i": 6,
+   "t": 33.02,
+   "who": "hotdog",
+   "cast": "hotdog",
+   "text": "三十秒，夠了。真正會的人，五秒就聽得出來。",
+   "feel": "calm",
+   "perf": null
+  },
+  {
+   "i": 7,
+   "t": 38.74,
+   "who": "gummyb",
+   "cast": "gummyb",
+   "text": "那剩下二十五秒我們要做什麼？",
+   "feel": "happy",
+   "perf": null
+  },
+  {
+   "i": 8,
+   "t": 41.26,
+   "who": "hotdog",
+   "cast": "hotdog",
+   "text": "……忍耐。",
+   "feel": "calm",
+   "perf": null
+  },
+  {
+   "i": 9,
+   "t": 44.08,
+   "who": "dj",
+   "cast": "dj",
+   "text": "第一位參賽者，請上台！",
+   "feel": "excited",
+   "perf": null
+  },
+  {
+   "i": 10,
+   "t": 51.63,
+   "who": "gummyb",
+   "cast": "gummyb",
+   "text": "阿嬤……妳是不是走錯棚了？菜市場在隔壁喔。",
+   "feel": "happy",
+   "perf": null
+  },
+  {
+   "i": 11,
+   "t": 55.75,
+   "who": "jinhua",
+   "cast": "jinhua",
+   "text": "少年欸，阿嬤是來比賽的啦！",
+   "feel": "excited",
+   "perf": null
+  },
+  {
+   "i": 12,
+   "t": 58.64,
+   "who": "hotdog",
+   "cast": "hotdog",
+   "text": "阿嬤，妳的藝名是？",
+   "feel": "calm",
+   "perf": null
+  },
+  {
+   "i": 13,
+   "t": 60.96000000000001,
+   "who": "jinhua",
+   "cast": "jinhua",
+   "text": "MC 金花！菜市場第一把麥克風！",
+   "feel": "proud",
+   "perf": null
+  },
+  {
+   "i": 14,
+   "t": 65.65,
+   "who": "dj",
+   "cast": "dj",
+   "text": "阿嬤，beat 給妳！",
+   "feel": "excited",
+   "perf": null
+  },
+  {
+   "i": 15,
+   "t": 70.007,
+   "who": "jinhua",
+   "cast": "jinhua",
+   "text": "Yo！菜市場的女王，金花來報到！",
+   "feel": "excited",
+   "perf": "jinhua:0"
+  },
+  {
+   "i": 16,
+   "t": 72.673,
+   "who": "jinhua",
+   "cast": "jinhua",
+   "text": "高麗菜一顆三十，比你們饒舌還要好！",
+   "feel": "excited",
+   "perf": "jinhua:1"
+  },
+  {
+   "i": 17,
+   "t": 75.34,
+   "who": "jinhua",
+   "cast": "jinhua",
+   "text": "蔥給你，薑給你，九層塔也送給你！",
+   "feel": "excited",
+   "perf": "jinhua:2"
+  },
+  {
+   "i": 18,
+   "t": 78.007,
+   "who": "jinhua",
+   "cast": "jinhua",
+   "text": "年輕人不要熬夜，熬夜不如吃地瓜粥！",
+   "feel": "excited",
+   "perf": "jinhua:3"
+  },
+  {
+   "i": 19,
+   "t": 81.34,
+   "who": "jinhua",
+   "cast": "jinhua",
+   "text": "喂？我在比賽啦！……瓦斯爐？有啦，我有關啦！",
+   "feel": "excited",
+   "perf": "jinhua:4"
+  },
+  {
+   "i": 20,
+   "t": 86.007,
+   "who": "jinhua",
+   "cast": "jinhua",
+   "text": "好，阿嬤回來了。剛剛唸到哪？",
+   "feel": "excited",
+   "perf": "jinhua:5"
+  },
+  {
+   "i": 21,
+   "t": 88.673,
+   "who": "jinhua",
+   "cast": "jinhua",
+   "text": "評審你們三個太瘦，等一下來阿嬤家吃飯！",
+   "feel": "excited",
+   "perf": "jinhua:6"
+  },
+  {
+   "i": 22,
+   "t": 91.34,
+   "who": "jinhua",
+   "cast": "jinhua",
+   "text": "阿嬤今年七十二，饒舌比你們還多年！",
+   "feel": "excited",
+   "perf": "jinhua:7"
+  },
+  {
+   "i": 23,
+   "t": 94.673,
+   "who": "jinhua",
+   "cast": "jinhua",
+   "text": "Peace！記得帶環保袋！",
+   "feel": "excited",
+   "perf": "jinhua:8"
+  },
+  {
+   "i": 24,
+   "t": 102.14000000000001,
+   "who": "hotdog",
+   "cast": "hotdog",
+   "text": "阿嬤，妳的節奏比很多年輕人穩。真的。",
+   "feel": "calm",
+   "perf": null
+  },
+  {
+   "i": 25,
+   "t": 107.33000000000001,
+   "who": "gummyb",
+   "cast": "gummyb",
+   "text": "我只記得高麗菜一顆三十。好便宜！",
+   "feel": "happy",
+   "perf": null
+  },
+  {
+   "i": 26,
+   "t": 110.85,
+   "who": "jsheon",
+   "cast": "jsheon",
+   "text": "中間那通電話……是真的嗎？",
+   "feel": "thinking",
+   "perf": null
+  },
+  {
+   "i": 27,
+   "t": 114.07,
+   "who": "jinhua",
+   "cast": "jinhua",
+   "text": "真的啦！阿嬤現在要回家看瓦斯爐。",
+   "feel": "worried",
+   "perf": null
+  },
+  {
+   "i": 28,
+   "t": 125.39000000000001,
+   "who": "jinhua",
+   "cast": "jinhua",
+   "text": "謝謝評審！你們三個，等一下來阿嬤家吃飯！",
+   "feel": "excited",
+   "perf": null
+  },
+  {
+   "i": 29,
+   "t": 137.38,
+   "who": "paomian",
+   "cast": "paomian",
+   "text": "Yo！我是 Lil 泡麵！",
+   "feel": "excited",
+   "perf": null
+  },
+  {
+   "i": 30,
+   "t": 139.8,
+   "who": "gummyb",
+   "cast": "gummyb",
+   "text": "你的鏈子……會不會太大了？你走路有聲音耶。",
+   "feel": "happy",
+   "perf": null
+  },
+  {
+   "i": 31,
+   "t": 143.49,
+   "who": "paomian",
+   "cast": "paomian",
+   "text": "這是我阿嬤送的。純金……塑膠。",
+   "feel": "proud",
+   "perf": null
+  },
+  {
+   "i": 32,
+   "t": 147.08,
+   "who": "hotdog",
+   "cast": "hotdog",
+   "text": "好，三十秒，開始。",
+   "feel": "calm",
+   "perf": null
+  },
+  {
+   "i": 33,
+   "t": 153.299,
+   "who": "paomian",
+   "cast": "paomian",
+   "text": "Yeah！Skrrt skrrt！",
+   "feel": "excited",
+   "perf": "paomian:0"
+  },
+  {
+   "i": 34,
+   "t": 155.013,
+   "who": "paomian",
+   "cast": "paomian",
+   "text": "Lil 泡麵 in the house！",
+   "feel": "excited",
+   "perf": "paomian:1"
+  },
+  {
+   "i": 35,
+   "t": 156.727,
+   "who": "paomian",
+   "cast": "paomian",
+   "text": "我的鏈子很重，我的泡麵很燙！",
+   "feel": "excited",
+   "perf": "paomian:2"
+  },
+  {
+   "i": 36,
+   "t": 158.441,
+   "who": "paomian",
+   "cast": "paomian",
+   "text": "我的……我的……",
+   "feel": "excited",
+   "perf": "paomian:3"
+  },
+  {
+   "i": 37,
+   "t": 160.584,
+   "who": "paomian",
+   "cast": "paomian",
+   "text": "Yeah。",
+   "feel": "excited",
+   "perf": "paomian:4"
+  },
+  {
+   "i": 38,
+   "t": 162.299,
+   "who": "paomian",
+   "cast": "paomian",
+   "text": "Yeah yeah。",
+   "feel": "excited",
+   "perf": "paomian:5"
+  },
+  {
+   "i": 39,
+   "t": 164.013,
+   "who": "paomian",
+   "cast": "paomian",
+   "text": "等一下……我忘詞了。",
+   "feel": "excited",
+   "perf": "paomian:6"
+  },
+  {
+   "i": 40,
+   "t": 167.013,
+   "who": "paomian",
+   "cast": "paomian",
+   "text": "Skrrt！",
+   "feel": "excited",
+   "perf": "paomian:7"
+  },
+  {
+   "i": 41,
+   "t": 169.584,
+   "who": "paomian",
+   "cast": "paomian",
+   "text": "泡麵……泡麵……泡麵要加蛋！",
+   "feel": "excited",
+   "perf": "paomian:8"
+  },
+  {
+   "i": 42,
+   "t": 174.727,
+   "who": "paomian",
+   "cast": "paomian",
+   "text": "……yeah。",
+   "feel": "excited",
+   "perf": "paomian:9"
+  },
+  {
+   "i": 43,
+   "t": 183.52700000000002,
+   "who": "gummyb",
+   "cast": "gummyb",
+   "text": "我幫你數了一下。三十秒，你講了十一個 yeah。",
+   "feel": "happy",
+   "perf": null
+  },
+  {
+   "i": 44,
+   "t": 187.077,
+   "who": "paomian",
+   "cast": "paomian",
+   "text": "那是我的風格。",
+   "feel": "proud",
+   "perf": null
+  },
+  {
+   "i": 45,
+   "t": 188.697,
+   "who": "hotdog",
+   "cast": "hotdog",
+   "text": "你的鏈子，比你的歌詞還重。",
+   "feel": "calm",
+   "perf": null
+  },
+  {
+   "i": 46,
+   "t": 191.71699999999998,
+   "who": "jsheon",
+   "cast": "jsheon",
+   "text": "「泡麵要加蛋」……其實我同意。",
+   "feel": "thinking",
+   "perf": null
+  },
+  {
+   "i": 47,
+   "t": 198.067,
+   "who": "paomian",
+   "cast": "paomian",
+   "text": "Skrrt。",
+   "feel": "sad",
+   "perf": null
+  },
+  {
+   "i": 48,
+   "t": 207.15699999999998,
+   "who": "kaiwen",
+   "cast": "kaiwen",
+   "text": "J 哥，這首歌……是為你唱的。",
+   "feel": "shy",
+   "perf": null
+  },
+  {
+   "i": 49,
+   "t": 210.507,
+   "who": "jsheon",
+   "cast": "jsheon",
+   "text": "……謝謝？",
+   "feel": "surprised",
+   "perf": null
+  },
+  {
+   "i": 50,
+   "t": 211.49699999999999,
+   "who": "gummyb",
+   "cast": "gummyb",
+   "text": "我覺得我們兩個可以先出去一下。",
+   "feel": "happy",
+   "perf": null
+  },
+  {
+   "i": 51,
+   "t": 217.346,
+   "who": "kaiwen",
+   "cast": "kaiwen",
+   "text": "寶貝～你是我的唯一～",
+   "feel": "excited",
+   "perf": "kaiwen:0"
+  },
+  {
+   "i": 52,
+   "t": 224.203,
+   "who": "kaiwen",
+   "cast": "kaiwen",
+   "text": "喔～耶～耶～～",
+   "feel": "excited",
+   "perf": "kaiwen:1"
+  },
+  {
+   "i": 53,
+   "t": 231.06,
+   "who": "kaiwen",
+   "cast": "kaiwen",
+   "text": "J 哥～我為你唱這首歌～",
+   "feel": "excited",
+   "perf": "kaiwen:2"
+  },
+  {
+   "i": 54,
+   "t": 237.917,
+   "who": "kaiwen",
+   "cast": "kaiwen",
+   "text": "耶～～～～（破音）",
+   "feel": "excited",
+   "perf": "kaiwen:3"
+  },
+  {
+   "i": 55,
+   "t": 242.203,
+   "who": "kaiwen",
+   "cast": "kaiwen",
+   "text": "……抱歉，我昨天吃太多鹹酥雞。",
+   "feel": "excited",
+   "perf": "kaiwen:4"
+  },
+  {
+   "i": 56,
+   "t": 247.57399999999998,
+   "who": "jsheon",
+   "cast": "jsheon",
+   "text": "你那個轉音……轉到我頭有點暈。",
+   "feel": "thinking",
+   "perf": null
+  },
+  {
+   "i": 57,
+   "t": 250.86399999999998,
+   "who": "gummyb",
+   "cast": "gummyb",
+   "text": "最後那個高音，我家的狗在外面回答你了。",
+   "feel": "happy",
+   "perf": null
+  },
+  {
+   "i": 58,
+   "t": 253.754,
+   "who": "hotdog",
+   "cast": "hotdog",
+   "text": "R&B 不是轉越多越好。",
+   "feel": "calm",
+   "perf": null
+  },
+  {
+   "i": 59,
+   "t": 255.974,
+   "who": "kaiwen",
+   "cast": "kaiwen",
+   "text": "那我，少轉一點？喔，耶。",
+   "feel": "shy",
+   "perf": null
+  },
+  {
+   "i": 60,
+   "t": 264.264,
+   "who": "jsheon",
+   "cast": "jsheon",
+   "text": "這一條給你，因為你真的很敢。",
+   "feel": "calm",
+   "perf": null
+  },
+  {
+   "i": 61,
+   "t": 267.414,
+   "who": "kaiwen",
+   "cast": "kaiwen",
+   "text": "J 哥……我會一輩子記得你。",
+   "feel": "shy",
+   "perf": null
+  },
+  {
+   "i": 62,
+   "t": 276.704,
+   "who": "ajie",
+   "cast": "ajie",
+   "text": "不好意思不好意思！剛送完一單，還好有趕上！",
+   "feel": "excited",
+   "perf": null
+  },
+  {
+   "i": 63,
+   "t": 280.824,
+   "who": "hotdog",
+   "cast": "hotdog",
+   "text": "你背著那個箱子比賽？",
+   "feel": "calm",
+   "perf": null
+  },
+  {
+   "i": 64,
+   "t": 283.044,
+   "who": "ajie",
+   "cast": "ajie",
+   "text": "箱子不能離身。這是外送員的尊嚴。",
+   "feel": "proud",
+   "perf": null
+  },
+  {
+   "i": 65,
+   "t": 289.194,
+   "who": "ajie",
+   "cast": "ajie",
+   "text": "外送外送，風雨無阻，使命必達！",
+   "feel": "excited",
+   "perf": "ajie:0"
+  },
+  {
+   "i": 66,
+   "t": 291.694,
+   "who": "ajie",
+   "cast": "ajie",
+   "text": "三樓沒電梯，我的腿已經不是我的腿！",
+   "feel": "excited",
+   "perf": "ajie:1"
+  },
+  {
+   "i": 67,
+   "t": 294.194,
+   "who": "ajie",
+   "cast": "ajie",
+   "text": "珍奶半糖少冰，我背得比歌詞還熟！",
+   "feel": "excited",
+   "perf": "ajie:2"
+  },
+  {
+   "i": 68,
+   "t": 296.694,
+   "who": "ajie",
+   "cast": "ajie",
+   "text": "客人說放門口，門口到底在哪裡！",
+   "feel": "excited",
+   "perf": "ajie:3"
+  },
+  {
+   "i": 69,
+   "t": 299.506,
+   "who": "ajie",
+   "cast": "ajie",
+   "text": "📱 叮咚！您有一筆新訂單。",
+   "feel": "excited",
+   "perf": "ajie:4"
+  },
+  {
+   "i": 70,
+   "t": 302.006,
+   "who": "ajie",
+   "cast": "ajie",
+   "text": "評審不好意思，這單十五分鐘要送到。",
+   "feel": "excited",
+   "perf": "ajie:5"
+  },
+  {
+   "i": 71,
+   "t": 307.094,
+   "who": "dj",
+   "cast": "dj",
+   "text": "呃……我再 loop 一下？",
+   "feel": "worried",
+   "perf": null
+  },
+  {
+   "i": 72,
+   "t": 311.694,
+   "who": "ajie",
+   "cast": "ajie",
+   "text": "送到了！記得給我五星好評！",
+   "feel": "excited",
+   "perf": "ajie:6"
+  },
+  {
+   "i": 73,
+   "t": 314.194,
+   "who": "ajie",
+   "cast": "ajie",
+   "text": "外送外送，風雨無阻，使命必達！",
+   "feel": "excited",
+   "perf": "ajie:7"
+  },
+  {
+   "i": 74,
+   "t": 321.99399999999997,
+   "who": "hotdog",
+   "cast": "hotdog",
+   "text": "你是我看過最敬業的……外送員。",
+   "feel": "calm",
+   "perf": null
+  },
+  {
+   "i": 75,
+   "t": 324.984,
+   "who": "gummyb",
+   "cast": "gummyb",
+   "text": "我剛剛有點餓。你箱子裡有珍奶嗎？",
+   "feel": "happy",
+   "perf": null
+  },
+  {
+   "i": 76,
+   "t": 328.204,
+   "who": "ajie",
+   "cast": "ajie",
+   "text": "有！半糖少冰。",
+   "feel": "excited",
+   "perf": null
+  },
+  {
+   "i": 77,
+   "t": 330.25399999999996,
+   "who": "gummyb",
+   "cast": "gummyb",
+   "text": "……這杯是誰的？",
+   "feel": "thinking",
+   "perf": null
+  },
+  {
+   "i": 78,
+   "t": 331.70399999999995,
+   "who": "ajie",
+   "cast": "ajie",
+   "text": "……剛剛那一單的。",
+   "feel": "scared",
+   "perf": null
+  },
+  {
+   "i": 79,
+   "t": 334.62399999999997,
+   "who": "jsheon",
+   "cast": "jsheon",
+   "text": "那你剛剛到底送了什麼過去？",
+   "feel": "surprised",
+   "perf": null
+  },
+  {
+   "i": 80,
+   "t": 336.974,
+   "who": "ajie",
+   "cast": "ajie",
+   "text": "……我的歌詞本。",
+   "feel": "sad",
+   "perf": null
+  },
+  {
+   "i": 81,
+   "t": 343.464,
+   "who": "ajie",
+   "cast": "ajie",
+   "text": "謝謝評審！記得給我五星好評！",
+   "feel": "excited",
+   "perf": null
+  },
+  {
+   "i": 82,
+   "t": 353.75399999999996,
+   "who": "max",
+   "cast": "max",
+   "text": "大家好！我是肌肉 Max！今天我要一邊做伏地挺身一邊饒舌！",
+   "feel": "excited",
+   "perf": null
+  },
+  {
+   "i": 83,
+   "t": 359.274,
+   "who": "gummyb",
+   "cast": "gummyb",
+   "text": "為什麼？",
+   "feel": "surprised",
+   "perf": null
+  },
+  {
+   "i": 84,
+   "t": 360.294,
+   "who": "max",
+   "cast": "max",
+   "text": "因為饒舌是有氧運動！",
+   "feel": "proud",
+   "perf": null
+  },
+  {
+   "i": 85,
+   "t": 362.284,
+   "who": "hotdog",
+   "cast": "hotdog",
+   "text": "那麥克風呢？",
+   "feel": "calm",
+   "perf": null
+  },
+  {
+   "i": 86,
+   "t": 363.804,
+   "who": "max",
+   "cast": "max",
+   "text": "我用丹田！",
+   "feel": "shout",
+   "perf": null
+  },
+  {
+   "i": 87,
+   "t": 368.965,
+   "who": "max",
+   "cast": "max",
+   "text": "一！二！三！四！胸肌在跳舞！",
+   "feel": "excited",
+   "perf": "max:0"
+  },
+  {
+   "i": 88,
+   "t": 370.9,
+   "who": "max",
+   "cast": "max",
+   "text": "伏地挺身一百下，饒舌只是暖身！",
+   "feel": "excited",
+   "perf": "max:1"
+  },
+  {
+   "i": 89,
+   "t": 372.83599999999996,
+   "who": "max",
+   "cast": "max",
+   "text": "蛋白質！雞胸肉！一天要吃六餐！",
+   "feel": "excited",
+   "perf": "max:2"
+  },
+  {
+   "i": 90,
+   "t": 375.255,
+   "who": "max",
+   "cast": "max",
+   "text": "呼……呼……等一下……",
+   "feel": "excited",
+   "perf": "max:3"
+  },
+  {
+   "i": 91,
+   "t": 378.642,
+   "who": "max",
+   "cast": "max",
+   "text": "腿日不能跳過，人生也不能跳過！",
+   "feel": "excited",
+   "perf": "max:4"
+  },
+  {
+   "i": 92,
+   "t": 381.546,
+   "who": "max",
+   "cast": "max",
+   "text": "呼……呼……我……需要……喝水……",
+   "feel": "excited",
+   "perf": "max:5"
+  },
+  {
+   "i": 93,
+   "t": 387.352,
+   "who": "max",
+   "cast": "max",
+   "text": "啊！",
+   "feel": "excited",
+   "perf": "max:6"
+  },
+  {
+   "i": 94,
+   "t": 398.662,
+   "who": "gummyb",
+   "cast": "gummyb",
+   "text": "需要幫你叫救護車，還是蛋白粉？",
+   "feel": "happy",
+   "perf": null
+  },
+  {
+   "i": 95,
+   "t": 401.18199999999996,
+   "who": "max",
+   "cast": "max",
+   "text": "我……可以……再一組……",
+   "feel": "sad",
+   "perf": null
+  },
+  {
+   "i": 96,
+   "t": 403.63199999999995,
+   "who": "hotdog",
+   "cast": "hotdog",
+   "text": "饒舌要練的是嘴巴，不是胸肌。",
+   "feel": "calm",
+   "perf": null
+  },
+  {
+   "i": 97,
+   "t": 406.62199999999996,
+   "who": "jsheon",
+   "cast": "jsheon",
+   "text": "不過你的伏地挺身……很標準。",
+   "feel": "calm",
+   "perf": null
+  },
+  {
+   "i": 98,
+   "t": 412.87199999999996,
+   "who": "max",
+   "cast": "max",
+   "text": "沒關係……我先……去喝水……",
+   "feel": "sad",
+   "perf": null
+  },
+  {
+   "i": 99,
+   "t": 425.12199999999996,
+   "who": "gummyb",
+   "cast": "gummyb",
+   "text": "他走了十秒。這樣三十秒會不會不夠？",
+   "feel": "thinking",
+   "perf": null
+  },
+  {
+   "i": 100,
+   "t": 428.81199999999995,
+   "who": "youyu",
+   "cast": "youyu",
+   "text": "我的饒舌，叫做，詩。",
+   "feel": "sad",
+   "perf": null
+  },
+  {
+   "i": 101,
+   "t": 432.1019999999999,
+   "who": "hotdog",
+   "cast": "hotdog",
+   "text": "好。開始吧。",
+   "feel": "calm",
+   "perf": null
+  },
+  {
+   "i": 102,
+   "t": 438.6719999999999,
+   "who": "youyu",
+   "cast": "youyu",
+   "text": "我……",
+   "feel": "excited",
+   "perf": "youyu:0"
+  },
+  {
+   "i": 103,
+   "t": 445.75499999999994,
+   "who": "youyu",
+   "cast": "youyu",
+   "text": "是……",
+   "feel": "excited",
+   "perf": "youyu:1"
+  },
+  {
+   "i": 104,
+   "t": 452.4219999999999,
+   "who": "youyu",
+   "cast": "youyu",
+   "text": "一片……",
+   "feel": "excited",
+   "perf": "youyu:2"
+  },
+  {
+   "i": 105,
+   "t": 460.75499999999994,
+   "who": "youyu",
+   "cast": "youyu",
+   "text": "雲。",
+   "feel": "excited",
+   "perf": "youyu:3"
+  },
+  {
+   "i": 106,
+   "t": 466.58899999999994,
+   "who": "youyu",
+   "cast": "youyu",
+   "text": "……我還沒唸完。",
+   "feel": "excited",
+   "perf": "youyu:4"
+  },
+  {
+   "i": 107,
+   "t": 468.52399999999994,
+   "who": "gummyb",
+   "cast": "gummyb",
+   "text": "啊？結束了嗎？我有在聽！你剛剛說……雲？",
+   "feel": "surprised",
+   "perf": null
+  },
+  {
+   "i": 108,
+   "t": 472.97399999999993,
+   "who": "jsheon",
+   "cast": "jsheon",
+   "text": "很有意境。但是三十秒，你只說了四個字。",
+   "feel": "thinking",
+   "perf": null
+  },
+  {
+   "i": 109,
+   "t": 477.9939999999999,
+   "who": "hotdog",
+   "cast": "hotdog",
+   "text": "一個字七秒半。比我家的網路還慢。",
+   "feel": "calm",
+   "perf": null
+  },
+  {
+   "i": 110,
+   "t": 482.28399999999993,
+   "who": "youyu",
+   "cast": "youyu",
+   "text": "……這就是人生。",
+   "feel": "sad",
+   "perf": null
+  },
+  {
+   "i": 111,
+   "t": 487.40399999999994,
+   "who": "youyu",
+   "cast": "youyu",
+   "text": "沒關係。雲，本來就會散。",
+   "feel": "sad",
+   "perf": null
+  },
+  {
+   "i": 112,
+   "t": 498.72399999999993,
+   "who": "jasper",
+   "cast": "jasper",
+   "text": "哥哥！你不要忘詞喔！",
+   "feel": "excited",
+   "perf": null
+  },
+  {
+   "i": 113,
+   "t": 500.8739999999999,
+   "who": "josh",
+   "cast": "josh",
+   "text": "你才不要忘詞！你等一下就上台了！",
+   "feel": "shout",
+   "perf": null
+  },
+  {
+   "i": 114,
+   "t": 503.9939999999999,
+   "who": "hotdog",
+   "cast": "hotdog",
+   "text": "那是你弟弟？",
+   "feel": "calm",
+   "perf": null
+  },
+  {
+   "i": 115,
+   "t": 505.5439999999999,
+   "who": "josh",
+   "cast": "josh",
+   "text": "對。他很吵。",
+   "feel": "calm",
+   "perf": null
+  },
+  {
+   "i": 116,
+   "t": 507.63399999999996,
+   "who": "jasper",
+   "cast": "jasper",
+   "text": "我是低音砲！",
+   "feel": "shout",
+   "perf": null
+  },
+  {
+   "i": 117,
+   "t": 508.88399999999996,
+   "who": "gummyb",
+   "cast": "gummyb",
+   "text": "好，Josh，從聖地牙哥來的。秀給我們看。",
+   "feel": "happy",
+   "perf": null
+  },
+  {
+   "i": 118,
+   "t": 515.343,
+   "who": "josh",
+   "cast": "josh",
+   "text": "從聖地牙哥，飛到這個舞台～",
+   "feel": "excited",
+   "perf": "josh:0"
+  },
+  {
+   "i": 119,
+   "t": 520.56,
+   "who": "josh",
+   "cast": "josh",
+   "text": "我是 Josh 十歲，來自加州的海灘！",
+   "feel": "excited",
+   "perf": "josh:1"
+  },
+  {
+   "i": 120,
+   "t": 523.169,
+   "who": "josh",
+   "cast": "josh",
+   "text": "早餐吃 taco，晚餐吃滷肉飯！",
+   "feel": "excited",
+   "perf": "josh:2"
+  },
+  {
+   "i": 121,
+   "t": 525.7769999999999,
+   "who": "josh",
+   "cast": "josh",
+   "text": "星期六中文學校，一筆一畫不簡單！",
+   "feel": "excited",
+   "perf": "josh:3"
+  },
+  {
+   "i": 122,
+   "t": 528.386,
+   "who": "josh",
+   "cast": "josh",
+   "text": "弟弟偷吃我薯條，這筆帳我還沒算！",
+   "feel": "excited",
+   "perf": "josh:4"
+  },
+  {
+   "i": 123,
+   "t": 530.7339999999999,
+   "who": "jasper",
+   "cast": "jasper",
+   "text": "我才沒有！",
+   "feel": "shout",
+   "perf": null
+  },
+  {
+   "i": 124,
+   "t": 530.9949999999999,
+   "who": "josh",
+   "cast": "josh",
+   "text": "我的 flow 像衝浪，一波一波一波一波停不下來！",
+   "feel": "excited",
+   "perf": "josh:5"
+  },
+  {
+   "i": 125,
+   "t": 533.6039999999999,
+   "who": "josh",
+   "cast": "josh",
+   "text": "評審評審請注意，這段歌詞我自己寫！",
+   "feel": "excited",
+   "perf": "josh:6"
+  },
+  {
+   "i": 126,
+   "t": 536.212,
+   "who": "josh",
+   "cast": "josh",
+   "text": "從聖地牙哥，飛到這個舞台～",
+   "feel": "excited",
+   "perf": "josh:7"
+  },
+  {
+   "i": 127,
+   "t": 541.43,
+   "who": "josh",
+   "cast": "josh",
+   "text": "Josh out！",
+   "feel": "excited",
+   "perf": "josh:8"
+  },
+  {
+   "i": 128,
+   "t": 546.838,
+   "who": "jsheon",
+   "cast": "jsheon",
+   "text": "副歌那個音很準。十歲耶。",
+   "feel": "surprised",
+   "perf": null
+  },
+  {
+   "i": 129,
+   "t": 549.9279999999999,
+   "who": "gummyb",
+   "cast": "gummyb",
+   "text": "taco 配滷肉飯……我覺得可以申請專利。",
+   "feel": "happy",
+   "perf": null
+  },
+  {
+   "i": 130,
+   "t": 552.718,
+   "who": "hotdog",
+   "cast": "hotdog",
+   "text": "自己寫的詞，聽得出來。有你的生活。",
+   "feel": "calm",
+   "perf": null
+  },
+  {
+   "i": 131,
+   "t": 564.2379999999999,
+   "who": "josh",
+   "cast": "josh",
+   "text": "Yes！",
+   "feel": "excited",
+   "perf": null
+  },
+  {
+   "i": 132,
+   "t": 565.0579999999999,
+   "who": "jasper",
+   "cast": "jasper",
+   "text": "換我！換我！換我！",
+   "feel": "excited",
+   "perf": null
+  },
+  {
+   "i": 133,
+   "t": 567.848,
+   "who": "josh",
+   "cast": "josh",
+   "text": "你還沒輪到！先下去！",
+   "feel": "shout",
+   "perf": null
+  },
+  {
+   "i": 134,
+   "t": 570.1679999999999,
+   "who": "dj",
+   "cast": "dj",
+   "text": "呃……好，那就……直接換弟弟！",
+   "feel": "excited",
+   "perf": null
+  },
+  {
+   "i": 135,
+   "t": 577.8879999999999,
+   "who": "jasper",
+   "cast": "jasper",
+   "text": "大家好！我是 Jasper！你們看，我人中右邊有一顆痣！",
+   "feel": "excited",
+   "perf": null
+  },
+  {
+   "i": 136,
+   "t": 582.608,
+   "who": "gummyb",
+   "cast": "gummyb",
+   "text": "……好，我們看到了。",
+   "feel": "happy",
+   "perf": null
+  },
+  {
+   "i": 137,
+   "t": 584.1279999999999,
+   "who": "jasper",
+   "cast": "jasper",
+   "text": "這是我的 logo！",
+   "feel": "proud",
+   "perf": null
+  },
+  {
+   "i": 138,
+   "t": 585.5179999999999,
+   "who": "hotdog",
+   "cast": "hotdog",
+   "text": "弟弟，你知道三十秒有多長嗎？",
+   "feel": "calm",
+   "perf": null
+  },
+  {
+   "i": 139,
+   "t": 588.7079999999999,
+   "who": "jasper",
+   "cast": "jasper",
+   "text": "知道！刷牙的時間！",
+   "feel": "excited",
+   "perf": null
+  },
+  {
+   "i": 140,
+   "t": 594.3269999999999,
+   "who": "jasper",
+   "cast": "jasper",
+   "text": "我是 Jasper 八歲，人中右邊有一顆痣！",
+   "feel": "excited",
+   "perf": "jasper:0"
+  },
+  {
+   "i": 141,
+   "t": 597.7549999999999,
+   "who": "jasper",
+   "cast": "jasper",
+   "text": "這顆痣是我的 logo，看清楚不要放肆！",
+   "feel": "excited",
+   "perf": "jasper:1"
+  },
+  {
+   "i": 142,
+   "t": 601.1839999999999,
+   "who": "jasper",
+   "cast": "jasper",
+   "text": "暴龍、迅猛龍、三角龍，還有劍龍！",
+   "feel": "excited",
+   "perf": "jasper:2"
+  },
+  {
+   "i": 143,
+   "t": 604.6119999999999,
+   "who": "jasper",
+   "cast": "jasper",
+   "text": "哥哥說我太吵，我說我是低音砲！",
+   "feel": "excited",
+   "perf": "jasper:3"
+  },
+  {
+   "i": 144,
+   "t": 608.0409999999999,
+   "who": "jasper",
+   "cast": "jasper",
+   "text": "吼——！",
+   "feel": "excited",
+   "perf": "jasper:4"
+  },
+  {
+   "i": 145,
+   "t": 609.7549999999999,
+   "who": "jasper",
+   "cast": "jasper",
+   "text": "哥哥的薯條，其實是我吃掉的！",
+   "feel": "excited",
+   "perf": "jasper:5"
+  },
+  {
+   "i": 146,
+   "t": 611.9979999999999,
+   "who": "josh",
+   "cast": "josh",
+   "text": "你說什麼？！",
+   "feel": "shout",
+   "perf": null
+  },
+  {
+   "i": 147,
+   "t": 613.1839999999999,
+   "who": "jasper",
+   "cast": "jasper",
+   "text": "評審給我項鍊，我要拿去換冰淇淋！",
+   "feel": "excited",
+   "perf": "jasper:6"
+  },
+  {
+   "i": 148,
+   "t": 617.4689999999999,
+   "who": "jasper",
+   "cast": "jasper",
+   "text": "Jasper！麥克風放下！",
+   "feel": "excited",
+   "perf": "jasper:7"
+  },
+  {
+   "i": 149,
+   "t": 624.3549999999999,
+   "who": "gummyb",
+   "cast": "gummyb",
+   "text": "他把我的笑話都講完了。我今天可以回家了。",
+   "feel": "happy",
+   "perf": null
+  },
+  {
+   "i": 150,
+   "t": 627.8749999999999,
+   "who": "hotdog",
+   "cast": "hotdog",
+   "text": "八歲，敢 mic drop。有種。",
+   "feel": "calm",
+   "perf": null
+  },
+  {
+   "i": 151,
+   "t": 631.7649999999999,
+   "who": "jsheon",
+   "cast": "jsheon",
+   "text": "那一聲吼……低頻很足。",
+   "feel": "thinking",
+   "perf": null
+  },
+  {
+   "i": 152,
+   "t": 634.555,
+   "who": "jasper",
+   "cast": "jasper",
+   "text": "評審，項鍊可以換冰淇淋嗎？",
+   "feel": "excited",
+   "perf": null
+  },
+  {
+   "i": 153,
+   "t": 637.0449999999998,
+   "who": "gummyb",
+   "cast": "gummyb",
+   "text": "不行。但是我口袋裡有軟糖。",
+   "feel": "happy",
+   "perf": null
+  },
+  {
+   "i": 154,
+   "t": 646.8949999999999,
+   "who": "josh",
+   "cast": "josh",
+   "text": "等一下！我的薯條！",
+   "feel": "shout",
+   "perf": null
+  },
+  {
+   "i": 155,
+   "t": 649.0149999999999,
+   "who": "jasper",
+   "cast": "jasper",
+   "text": "已經消化了。",
+   "feel": "proud",
+   "perf": null
+  },
+  {
+   "i": 156,
+   "t": 656.7649999999999,
+   "who": "hotdog",
+   "cast": "hotdog",
+   "text": "今天晉級的四位：金花阿嬤、外送員阿傑、Josh，還有 Jasper。",
+   "feel": "calm",
+   "perf": null
+  },
+  {
+   "i": 157,
+   "t": 662.685,
+   "who": "hotdog",
+   "cast": "hotdog",
+   "text": "下一輪是一對一 battle。抽籤結果……",
+   "feel": "calm",
+   "perf": null
+  },
+  {
+   "i": 158,
+   "t": 669.535,
+   "who": "josh",
+   "cast": "josh",
+   "text": "……準備好輸吧。",
+   "feel": "calm",
+   "perf": null
+  },
+  {
+   "i": 159,
+   "t": 670.9849999999999,
+   "who": "jasper",
+   "cast": "jasper",
+   "text": "你才準備好你的薯條吧。",
+   "feel": "proud",
+   "perf": null
+  },
+  {
+   "i": 160,
+   "t": 672.9749999999999,
+   "who": "gummyb",
+   "cast": "gummyb",
+   "text": "這個節目，正式變成家庭糾紛了。",
+   "feel": "happy",
+   "perf": null
+  },
+  {
+   "i": 161,
+   "t": 675.5949999999999,
+   "who": "jinhua",
+   "cast": "jinhua",
+   "text": "好了好了，不要吵！大家來阿嬤家吃飯！",
+   "feel": "excited",
+   "perf": null
+  },
+  {
+   "i": 162,
+   "t": 679.915,
+   "who": "ajie",
+   "cast": "ajie",
+   "text": "阿嬤，要不要外送？",
+   "feel": "excited",
+   "perf": null
+  },
+  {
+   "i": 163,
+   "t": 681.935,
+   "who": "jinhua",
+   "cast": "jinhua",
+   "text": "你剛剛那單還沒送到啦！",
+   "feel": "shout",
+   "perf": null
+  },
+  {
+   "i": 164,
+   "t": 684.2549999999999,
+   "who": "dj",
+   "cast": "dj",
+   "text": "《大嘻哈時代3》海選，我們下次見！",
+   "feel": "excited",
+   "perf": null
+  }
+ ]
+}

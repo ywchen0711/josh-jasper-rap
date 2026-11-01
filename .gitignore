@@ -1,0 +1,5 @@
+node_modules/
+renders/
+tools/raw_crowd/
+tools/tts_cache/
+tools/__pycache__/

@@ -1,0 +1,1 @@
+{ "name": "josh-word-gold", "private": true, "type": "module", "devDependencies": { "puppeteer-core": "^22.15.0" } }
