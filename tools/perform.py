@@ -262,13 +262,16 @@ def rap_flow(text, beat, beats, V, step=0.25, fx=True):
     for k, (i, n) in enumerate(plan):
         if not isinstance(i, int): t += n * st; continue
         off, dur, w = words[i]; n_ = n + (1 if i == last else 0)
-        a = int(max(0, off - 0.015) * SR); b = int(min(len(x) / SR, off + dur + 0.03) * SR); seg = x[a:b]
-        want = n_ * st * (0.97 if i == last else 0.9); tempo = len(seg) / SR / max(0.02, want)
-        y = rubber(seg, tempo=max(0.55, min(2.4, tempo))) if abs(tempo - 1) > 0.03 else seg
-        y = fade(y[:int(want * SR)], 0.003, 0.012) * (1.2 if i == last else 1.0)
+        a = int(max(0, off - 0.015) * SR); b = int(min(len(x) / SR, off + dur + 0.06) * SR); seg = x[a:b]
+        # a word too long for its slots is squeezed; a short one keeps (nearly) its own length and lets the beat breathe,
+        # so the voice keeps its natural speed instead of every syllable being dragged out to fill the grid
+        want = n_ * st * (0.97 if i == last else 0.92); tempo = len(seg) / SR / max(0.02, want)
+        tempo = min(2.2, tempo) if tempo > 1 else max(0.8 if i == last else 0.9, tempo)
+        y = rubber(seg, tempo=tempo) if abs(tempo - 1) > 0.03 else seg
+        y = fade(y[:int(want * SR)], 0.004, 0.03) * (1.15 if i == last else 1.0)
         put(out, y, t); t += n * st
-    y = fade(norm(comp(trim(out[:int((t + st * 2) * SR)])), 0.85))
-    return double(y) if fx else y
+    y = fade(norm(comp(trim(out[:int((t + st * 2) * SR)]), 1.4), 0.85))
+    return roomy(double(y, cents=8, gain=0.2), wet=0.08) if fx else y
 def rap_line(text, slot, V, fx=True, min_tempo=0.5):
     voice, pitch, rate = V; x = tts(text, voice, rate + 25, pitch)
     want = slot * 0.94; tempo = len(x) / SR / want

@@ -82,7 +82,7 @@ async function loadVoices() {
 }
 async function buffer(i) {
   const v = S.voice?.lines?.[i]; if (!v) return null; if (S.buffers[i]) return S.buffers[i];
-  const { ac } = audio(); if (!ac) return null; const ab = await (await fetch(`audio/${v.file}`)).arrayBuffer(); S.buffers[i] = await ac.decodeAudioData(ab); return S.buffers[i];
+  const { ac } = audio(); if (!ac) return null; const ab = await (await fetch(`audio/${v.file}?v=${EP.audioV || 1}`)).arrayBuffer(); S.buffers[i] = await ac.decodeAudioData(ab); return S.buffers[i];
 }
 function speak(i, offset) { // play a line's recording from where the film is in it
   if (S.buffers[i]) { const { ac, out } = audio(); const s = ac.createBufferSource(); s.buffer = S.buffers[i]; s.connect(out); s.start(S.offline ? S.t : 0, Math.max(0, offset)); S.src = s; return; }
@@ -275,10 +275,14 @@ function texts() {
   $('blurb').textContent = (EP.blurb || {})[lang] || ''; document.title = `${EP.title.zh[0]} ${EP.title.zh[1]}`;
   $('intro').dataset.k = '';
 }
-let last = performance.now();
+let last = performance.now(), lastAc = null;
 function loop(now) {
-  const dt = Math.min(0.05, (now - last) / 1000); last = now;
-  if (S.playing) { advance(dt); if (S.t >= EP.len) { S.t = EP.len; pause(); if (REC.on) REC.rec.stop(); else $('start').hidden = false; } }
+  // the film keeps time with the sound card, not the frames: a slow frame skips ahead instead of letting the picture fall
+  // behind the songs (which play on in real time), in steps small enough for the world to move smoothly
+  const { ac } = audio(), live = ac && !(ac instanceof OfflineAudioContext) && ac.state === 'running';
+  let dt = Math.min(0.05, (now - last) / 1000); last = now;
+  if (live) { if (lastAc != null && S.playing) dt = Math.min(0.5, Math.max(0, ac.currentTime - lastAc)); lastAc = ac.currentTime; } else lastAc = null;
+  if (S.playing) { for (let k = Math.ceil(dt / 0.05), i = 0; i < k; i++) advance(dt / k); if (S.t >= EP.len) { S.t = EP.len; pause(); if (REC.on) REC.rec.stop(); else $('start').hidden = false; } }
   const c = camera(); O.update(W.camera, c.look); const cc = O.on ? O.cam() : c; W.place(cc); const back = clearFaces(cc); W.render(); back(); overlays(); if (REC.on) REC.draw();
   requestAnimationFrame(loop);
 }
@@ -292,7 +296,7 @@ function startFrom0() { mute(false); S.sim = false; S.src?.stop?.(); S.heard.cle
 // the whole soundtrack, made offline: voices at their lines, every sound effect, the ambience, all at their moments
 async function renderAudio(sr = 48000) {
   const oac = new OfflineAudioContext(2, Math.ceil(sr * (EP.len + 1)), sr); S.offline = true; offline(oac);
-  if (S.voice) for (let i = 0; i < EP.lines.length; i++) { const v = S.voice.lines[i]; if (!v) continue; const ab = await (await fetch(`audio/${v.file}`)).arrayBuffer(); S.buffers[i] = await oac.decodeAudioData(ab); }
+  if (S.voice) for (let i = 0; i < EP.lines.length; i++) { const v = S.voice.lines[i]; if (!v) continue; const ab = await (await fetch(`audio/${v.file}?v=${EP.audioV || 1}`)).arrayBuffer(); S.buffers[i] = await oac.decodeAudioData(ab); }
   startFrom0(); S.playing = true; SFX.ambience(scenes[0].ambience || null);
   while (S.t < EP.len) stepFrame(30);
   S.playing = false; SFX.ambience(null);

@@ -73,7 +73,7 @@ function scene(o, write) {
     // a performance: the beat starts, the lines land on it (with anything said over it), the camera moves round
     P(pid, who, o = {}) {
       const S = PERF[pid], t0 = t + (o.lead ?? 0.3), kind = S.lines.some((l) => l.kind === 'sing') && !S.lines.some((l) => l.kind === 'rap') ? 'sing' : 'rap', g = beatGest(S.bpm, kind);
-      cues.push([t0, (A, F) => { F.sfx('sample', S.beatFile, o.vol ?? 0.3); set(F).beat(S.bpm, S.len - (S.len > 31 ? 1.6 : 0)); set(F).screen('live', { name: o.name, len: Math.min(30, S.len) }); if (o.gest !== false) A[who].gest(g, { hold: true }); for (const j of JUDGES) A[j].gest('jnod', { hold: true }); if (A.dj && !o.noDJ) A.dj.gest('scratch', { hold: true }); }]);
+      cues.push([t0, (A, F) => { F.sfx('sample', S.beatFile, o.vol ?? 0.5); set(F).beat(S.bpm, S.len - (S.len > 31 ? 1.6 : 0)); set(F).screen('live', { name: o.name, len: Math.min(30, S.len) }); if (o.gest !== false) A[who].gest(g, { hold: true }); for (const j of JUDGES) A[j].gest('jnod', { hold: true }); if (A.dj && !o.noDJ) A.dj.gest('scratch', { hold: true }); }]);
       const items = [...S.lines.map((l, i) => ({ at: l.at, perf: `${pid}:${i}`, who, zh: (l.phone ? '📱 ' : '') + l.text, en: l.en, feel: 'excited' })), ...(o.over || []).map((x) => ({ ...x, perf: null }))].sort((a, b) => a.at - b.at);
       for (const it of items) { lines.push([t0 + it.at, it.who, it.zh, it.en, it.feel || 'excited']); say.push(it.say || null); perf.push(it.perf); LI++; }
       for (const [at, fn] of o.cues || []) cues.push([t0 + at, fn]);
@@ -385,8 +385,8 @@ for (const s of SCENES) {
 }
 cues.sort((a, b) => a[0] - b[0]); shots.sort((a, b) => a[0] - b[0]);
 export const RAP1 = {
-  id: 'rap1', len: T0, voiced: true, audioV: 1, pace: 0, scenes, lines, cues, shots, say, perf,
-  samplesV: 1, samples: ['applause_long', 'drumroll16', 'ring', 'notify', 'roar', 'micdrop', 'snore', 'scratchstop', 'clank', 'chain', 'sadtrombone', 'whoosh', 'airhorn', ...Object.values(PERF).map((p) => p.beatFile), ...Object.entries(TAKES).flatMap(([b, n]) => Array.from({ length: n }, (_, i) => b + (i + 1)))],
+  id: 'rap1', len: T0, voiced: true, audioV: 2, pace: 0, scenes, lines, cues, shots, say, perf,
+  samplesV: 2, samples: ['applause_long', 'drumroll16', 'ring', 'notify', 'roar', 'micdrop', 'snore', 'scratchstop', 'clank', 'chain', 'sadtrombone', 'whoosh', 'airhorn', ...Object.values(PERF).map((p) => p.beatFile), ...Object.entries(TAKES).flatMap(([b, n]) => Array.from({ length: n }, (_, i) => b + (i + 1)))],
   title: { zh: ['Josh & Jasper', '大嘻哈時代3'], en: ['Josh & Jasper', 'The Rap Era 3'] },
   end: { zh: '《大嘻哈時代3》海選　完', en: 'The End' },
   blurb: { zh: '八位參賽者，每人只有三十秒！菜市場饒舌阿嬤、只會說 yeah 的 Lil 泡麵、對著評審唱情歌的 R&B 王子、唱到一半去送單的外送員、邊做伏地挺身邊饒舌的健身教練、三十秒只說四個字的詩人……還有從聖地牙哥來的 Josh，和人中有顆痣、會恐龍吼的弟弟 Jasper。', en: 'Eight contestants, thirty seconds each! A market grandma, a rookie who only says yeah, an R&B prince serenading a judge, a courier who leaves mid-song for an order, a trainer rapping through push-ups, a poet who gets four words out — and Josh from San Diego, with his little brother Jasper and his dinosaur roar.' },
