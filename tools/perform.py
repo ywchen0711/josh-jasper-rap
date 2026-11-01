@@ -218,6 +218,57 @@ def double(x, cents=12, delay=0.016, gain=0.35):
 def comp(x, drive=2.2): return np.tanh(x * drive) / np.tanh(drive)
 def norm(x, peak=0.8): m = np.max(np.abs(x)) if len(x) else 0; return x / m * peak if m > 0 else x
 
+async def _tts_words(text, voice, rate, pitch, path):
+    c = edge_tts.Communicate(text, voice, rate=f'{rate:+d}%', pitch=f'{pitch:+d}Hz', boundary='WordBoundary'); words = []
+    with open(path, 'wb') as f:
+        async for ch in c.stream():
+            if ch['type'] == 'audio': f.write(ch['data'])
+            elif ch['type'] == 'WordBoundary': words.append([ch['offset'] / 1e7, ch['duration'] / 1e7, ch['text']])
+    json.dump(words, open(path + '.json', 'w', encoding='utf-8'), ensure_ascii=False)
+def tts_words(text, voice, rate=0, pitch=0):
+    """a recording and where each word in it starts and ends (seconds); not trimmed, so the times hold"""
+    key = hashlib.md5(f'wb|{text}|{voice}|{rate}|{pitch}'.encode()).hexdigest()[:16]; path = os.path.join(CACHE, key + '.mp3')
+    for attempt in range(6):
+        if os.path.exists(path + '.json') and os.path.getsize(path) > 0: break
+        try: asyncio.run(asyncio.wait_for(_tts_words(text, voice, rate, pitch, path), 40))
+        except Exception as e: print('  retry', text, e); asyncio.run(asyncio.sleep(2))
+    return decode(path), json.load(open(path + '.json', encoding='utf-8'))
+PUNCT = set('，,、！!？?。；;…～~—')
+def syllables(w):
+    """a word's beats: one per Chinese character, roughly one per vowel group in English (Josh 1, Jasper 2, logo 2)"""
+    n = sum(1 for ch in w if '一' <= ch <= '鿿')
+    lat = re.sub(r'[^a-z]', ' ', w.lower()).split()
+    for x in lat: x = x[:-1] if len(x) > 3 and x.endswith('e') else x; n += max(1, len(re.findall(r'[aeiouy]+', x)))
+    return max(1, n)
+def rap_flow(text, beat, beats, V, step=0.25, fx=True):
+    """rap on the grid: each syllable gets a step (a 16th by default), each comma a rest, the rhyme at the end held one
+    step longer and hit a little harder. The recording is cut at its word boundaries and every word stretched to its
+    slots, so the words land on the beat instead of being spoken over it."""
+    voice, pitch, rate = V; x, words = tts_words(text, voice, rate + 10, pitch)
+    # the audio runs a little behind the reported times (about 0.1 s): measured at the first sound, then every cut moves by it
+    a_ = np.abs(x); first = int(np.argmax(a_ > 0.05 * a_.max())) / SR; lag = min(0.2, max(0.0, first - words[0][0]))
+    words = [[off + lag, dur, w] for off, dur, w in words]
+    # walk the text alongside the words to find the rests
+    plan = []; pos = 0
+    for i, (off, dur, w) in enumerate(words):
+        j = text.find(w, pos); gap = text[pos:j] if j >= 0 else ''; pos = j + len(w) if j >= 0 else pos
+        if plan and any(c in PUNCT for c in gap): plan.append(('rest', 1))
+        plan.append((i, syllables(w)))
+    plan.append(('hold', 1))
+    slots = sum(n for _, n in plan); room = beats / step
+    st = step * beat * (min(1, room / slots))
+    if slots > room: print(f'  !! "{text}" has {slots} slots, the bar holds {room:.0f}: squeezed')
+    out = np.zeros(int((slots + 2) * st * SR) + SR); t = 0.0; last = max(i for i, _ in plan if isinstance(i, int))
+    for k, (i, n) in enumerate(plan):
+        if not isinstance(i, int): t += n * st; continue
+        off, dur, w = words[i]; n_ = n + (1 if i == last else 0)
+        a = int(max(0, off - 0.015) * SR); b = int(min(len(x) / SR, off + dur + 0.03) * SR); seg = x[a:b]
+        want = n_ * st * (0.97 if i == last else 0.9); tempo = len(seg) / SR / max(0.02, want)
+        y = rubber(seg, tempo=max(0.55, min(2.4, tempo))) if abs(tempo - 1) > 0.03 else seg
+        y = fade(y[:int(want * SR)], 0.003, 0.012) * (1.2 if i == last else 1.0)
+        put(out, y, t); t += n * st
+    y = fade(norm(comp(trim(out[:int((t + st * 2) * SR)])), 0.85))
+    return double(y) if fx else y
 def rap_line(text, slot, V, fx=True, min_tempo=0.5):
     voice, pitch, rate = V; x = tts(text, voice, rate + 25, pitch)
     want = slot * 0.94; tempo = len(x) / SR / want
@@ -260,7 +311,8 @@ def build(pid):
     d = os.path.join(ROOT, 'audio', 'rap1'); os.makedirs(d, exist_ok=True); lines = []
     for i, ln in enumerate(S['lines']):
         kind, at, text = ln['kind'], ln['at'], ln['text']; start = at * beat  # 'at' is in beats from the top
-        if kind == 'rap': x = rap_line(ln.get('say', text), ln['beats'] * beat, ln.get('voice', V), fx=ln.get('fx', True), min_tempo=ln.get('minTempo', 0.5))
+        if kind == 'rap' and not ln.get('free'): x = rap_flow(ln.get('say', text), beat, ln['beats'], ln.get('voice', V), step=ln.get('step', S.get('step', 0.25)), fx=ln.get('fx', True))
+        elif kind == 'rap': x = rap_line(ln.get('say', text), ln['beats'] * beat, ln.get('voice', V), fx=ln.get('fx', True), min_tempo=ln.get('minTempo', 0.5))
         elif kind == 'sing': x = sing_line(ln['notes'], beat, ln.get('voice', V), vib=ln.get('vib', 0.012), style=ln.get('style', 'tuned'))
         elif kind == 'talk': x = talk_line(ln.get('say', text), ln.get('voice', V), ln.get('feel', 0))
         elif kind == 'adlib': x = norm(double(talk_line(ln.get('say', text), ln.get('voice', V), 15)), 0.7)

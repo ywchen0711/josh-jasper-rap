@@ -142,7 +142,7 @@
    "t": 70.007,
    "who": "jinhua",
    "cast": "jinhua",
-   "text": "Yo！菜市場的女王，金花來報到！",
+   "text": "Yo！菜市場的女王，金花阿嬤來報到！",
    "feel": "excited",
    "perf": "jinhua:0"
   },
@@ -151,7 +151,7 @@
    "t": 72.673,
    "who": "jinhua",
    "cast": "jinhua",
-   "text": "高麗菜一顆三十，比你們饒舌還要好！",
+   "text": "高麗菜一顆三十，比你饒舌還要好！",
    "feel": "excited",
    "perf": "jinhua:1"
   },
@@ -160,7 +160,7 @@
    "t": 75.34,
    "who": "jinhua",
    "cast": "jinhua",
-   "text": "蔥給你，薑給你，九層塔也送給你！",
+   "text": "蔥也送，薑也送，九層塔送你一大包！",
    "feel": "excited",
    "perf": "jinhua:2"
   },
@@ -169,7 +169,7 @@
    "t": 78.007,
    "who": "jinhua",
    "cast": "jinhua",
-   "text": "年輕人不要熬夜，熬夜不如吃地瓜粥！",
+   "text": "年輕人別熬夜，熬夜皮膚會變糟！",
    "feel": "excited",
    "perf": "jinhua:3"
   },
@@ -196,7 +196,7 @@
    "t": 88.673,
    "who": "jinhua",
    "cast": "jinhua",
-   "text": "評審你們三個太瘦，等一下來阿嬤家吃飯！",
+   "text": "評審三個太瘦了，來阿嬤家吃到飽！",
    "feel": "excited",
    "perf": "jinhua:6"
   },
@@ -205,7 +205,7 @@
    "t": 91.34,
    "who": "jinhua",
    "cast": "jinhua",
-   "text": "阿嬤今年七十二，饒舌比你們還多年！",
+   "text": "阿嬤七十二，饒舌比你還老到！",
    "feel": "excited",
    "perf": "jinhua:7"
   },
@@ -313,7 +313,7 @@
    "t": 155.013,
    "who": "paomian",
    "cast": "paomian",
-   "text": "Lil 泡麵 in the house！",
+   "text": "Lil 泡麵，最會闖！",
    "feel": "excited",
    "perf": "paomian:1"
   },
@@ -322,7 +322,7 @@
    "t": 156.727,
    "who": "paomian",
    "cast": "paomian",
-   "text": "我的鏈子很重，我的泡麵很燙！",
+   "text": "鏈子重，泡麵燙！",
    "feel": "excited",
    "perf": "paomian:2"
   },
@@ -376,7 +376,7 @@
    "t": 169.584,
    "who": "paomian",
    "cast": "paomian",
-   "text": "泡麵……泡麵……泡麵要加蛋！",
+   "text": "泡麵泡麵，加蛋加蛋，泡麵要加蛋！",
    "feel": "excited",
    "perf": "paomian:8"
   },
@@ -484,7 +484,7 @@
    "t": 231.06,
    "who": "kaiwen",
    "cast": "kaiwen",
-   "text": "J 哥～我為你唱這首歌～",
+   "text": "J 哥～這首歌只唱給你～",
    "feel": "excited",
    "perf": "kaiwen:2"
   },
@@ -601,7 +601,7 @@
    "t": 291.694,
    "who": "ajie",
    "cast": "ajie",
-   "text": "三樓沒電梯，我的腿已經不是我的腿！",
+   "text": "三樓沒電梯，我的雙腿在掙扎！",
    "feel": "excited",
    "perf": "ajie:1"
   },
@@ -610,7 +610,7 @@
    "t": 294.194,
    "who": "ajie",
    "cast": "ajie",
-   "text": "珍奶半糖少冰，我背得比歌詞還熟！",
+   "text": "珍奶半糖少冰，背熟了沒在怕！",
    "feel": "excited",
    "perf": "ajie:2"
   },
@@ -619,7 +619,7 @@
    "t": 296.694,
    "who": "ajie",
    "cast": "ajie",
-   "text": "客人說放門口，門口到底在哪裡！",
+   "text": "客人說放門口，門口到底在哪？",
    "feel": "excited",
    "perf": "ajie:3"
   },
@@ -790,7 +790,7 @@
    "t": 368.965,
    "who": "max",
    "cast": "max",
-   "text": "一！二！三！四！胸肌在跳舞！",
+   "text": "一二三四，胸肌在跳舞！",
    "feel": "excited",
    "perf": "max:0"
   },
@@ -799,7 +799,7 @@
    "t": 370.9,
    "who": "max",
    "cast": "max",
-   "text": "伏地挺身一百下，饒舌只是暖身！",
+   "text": "挺身一百下，流汗不怕苦！",
    "feel": "excited",
    "perf": "max:1"
   },
@@ -808,7 +808,7 @@
    "t": 372.83599999999996,
    "who": "max",
    "cast": "max",
-   "text": "蛋白質！雞胸肉！一天要吃六餐！",
+   "text": "雞胸蛋白質，六餐塞滿肚！",
    "feel": "excited",
    "perf": "max:2"
   },
@@ -826,7 +826,7 @@
    "t": 378.642,
    "who": "max",
    "cast": "max",
-   "text": "腿日不能跳過，人生也不能跳過！",
+   "text": "腿日不能跳，人生不能輸！",
    "feel": "excited",
    "perf": "max:4"
   },
@@ -1123,7 +1123,7 @@
    "t": 530.9949999999999,
    "who": "josh",
    "cast": "josh",
-   "text": "我的 flow 像衝浪，一波一波一波一波停不下來！",
+   "text": "我的 flow 像衝浪，一波一波打上岸！",
    "feel": "excited",
    "perf": "josh:5"
   },
@@ -1132,7 +1132,7 @@
    "t": 533.6039999999999,
    "who": "josh",
    "cast": "josh",
-   "text": "評審評審請注意，這段歌詞我自己寫！",
+   "text": "評審別小看，這段歌詞我自己編！",
    "feel": "excited",
    "perf": "josh:6"
   },
@@ -1267,7 +1267,7 @@
    "t": 594.3269999999999,
    "who": "jasper",
    "cast": "jasper",
-   "text": "我是 Jasper 八歲，人中右邊有一顆痣！",
+   "text": "我是 Jasper，八歲，人中右邊有顆痣！",
    "feel": "excited",
    "perf": "jasper:0"
   },
@@ -1285,7 +1285,7 @@
    "t": 601.1839999999999,
    "who": "jasper",
    "cast": "jasper",
-   "text": "暴龍、迅猛龍、三角龍，還有劍龍！",
+   "text": "暴龍三角龍，都是我的小弟！",
    "feel": "excited",
    "perf": "jasper:2"
   },
@@ -1294,7 +1294,7 @@
    "t": 604.6119999999999,
    "who": "jasper",
    "cast": "jasper",
-   "text": "哥哥說我太吵，我說我是低音砲！",
+   "text": "哥哥嫌我吵？低音砲轟進你耳裡！",
    "feel": "excited",
    "perf": "jasper:3"
   },
@@ -1312,7 +1312,7 @@
    "t": 609.7549999999999,
    "who": "jasper",
    "cast": "jasper",
-   "text": "哥哥的薯條，其實是我吃掉的！",
+   "text": "哥哥的薯條，其實是我吃進肚子裡！",
    "feel": "excited",
    "perf": "jasper:5"
   },
@@ -1330,7 +1330,7 @@
    "t": 613.1839999999999,
    "who": "jasper",
    "cast": "jasper",
-   "text": "評審給我項鍊，我要拿去換冰淇淋！",
+   "text": "評審給項鍊，換冰淇淋，謝謝你！",
    "feel": "excited",
    "perf": "jasper:6"
   },
